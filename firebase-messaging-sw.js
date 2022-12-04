@@ -1,4 +1,4 @@
-
+/*
 importScripts('https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/9.14.0/firebase-messaging.js');
 //import { initializeApp } from "firebase/app";
@@ -29,3 +29,4 @@ messaging.setBackgroundMessageHandler(function(payload){
  
     return self.registration.showNotification(title,options);
 });
+*/
