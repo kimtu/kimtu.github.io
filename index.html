@@ -55,6 +55,22 @@
                 return getToken();
             }
         });
+
+
+        getToken(messaging, { vapidKey: 'BLtxYDrtW9Wlp0RwNhZ5t_ndB34sU3AwGgzgWOWxCwVLW1dQwPUVOQ9cbRrKZbfj7UoRgyuz_rZTHORAT_gIo0E' }).then((currentToken) => {
+		  if (currentToken) {
+			// Send the token to your server and update the UI if necessary
+			// ...
+            console.log('exists... current token...');
+		  } else {
+			// Show permission request UI
+			console.log('No registration token available. Request permission to generate one.');
+			// ...
+		  }
+		}).catch((err) => {
+		  console.log('An error occurred while retrieving token. ', err);
+		  // ...
+		});
       </script>
 </body>
 </html>
