@@ -1,8 +1,8 @@
 
-//importScripts('https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js');
-//importScripts('https://www.gstatic.com/firebasejs/9.14.0/firebase-messaging.js');
-import { initializeApp } from "firebase/app";
-import { getMessaging } from "firebase/messaging/sw";
+importScripts('https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/9.14.0/firebase-messaging.js');
+//import { initializeApp } from "firebase/app";
+//import { getMessaging } from "firebase/messaging/sw";
 
 
 // Your web app's Firebase configuration
