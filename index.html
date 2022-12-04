@@ -34,6 +34,7 @@
         const messaging = getMessaging(app);
 
         //token값 알아내기
+        /*
         Notification.requestPermission()
         .then(function(){
             console.log("Have permission");
@@ -44,6 +45,15 @@
         })
         .catch(function(arr){
             console.log("Error Occured");
+        });
+        */
+
+
+        Notification.requestPermission().then((permission) => {
+            if (permission === 'granted') {
+                console.log('Notification permission granted.');
+                return getToken();
+            }
         });
       </script>
 </body>
